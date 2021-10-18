@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MenuFunnies.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Week 10000" x="1391" y="1586" width="1366" height="768"/>
+	<SubTexture name="Week 20000" x="0" y="2379" width="1366" height="768"/>
+	<SubTexture name="Week 30000" x="1391" y="2379" width="1366" height="768"/>
+	<SubTexture name="Week 40000" x="0" y="3172" width="1366" height="768"/>
+	<SubTexture name="credits0000" x="0" y="0" width="1366" height="768"/>
+	<SubTexture name="freeplay0000" x="1391" y="0" width="1366" height="768"/>
+	<SubTexture name="gallery0000" x="0" y="793" width="1366" height="768"/>
+	<SubTexture name="options0000" x="1391" y="793" width="1366" height="768"/>
+	<SubTexture name="story mode0000" x="0" y="1586" width="1366" height="768"/>
+</TextureAtlas>

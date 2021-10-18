@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="WeekSelect.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Week 10000" x="0" y="0" width="638" height="227" frameX="-119" frameY="-67" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 10001" x="0" y="0" width="638" height="227" frameX="-119" frameY="-67" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 10002" x="0" y="0" width="638" height="227" frameX="-119" frameY="-67" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 10003" x="0" y="0" width="638" height="227" frameX="-119" frameY="-67" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 10004" x="0" y="0" width="638" height="227" frameX="-119" frameY="-67" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 10005" x="0" y="0" width="638" height="227" frameX="-119" frameY="-67" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 10006" x="0" y="0" width="638" height="227" frameX="-119" frameY="-67" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 10007" x="0" y="0" width="638" height="227" frameX="-119" frameY="-67" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 10008" x="663" y="0" width="877" height="360"/>
+	<SubTexture name="Week 10009" x="1565" y="0" width="830" height="282" frameX="-23" frameY="-39" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 10010" x="2420" y="0" width="736" height="216" frameX="-70" frameY="-72" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 10011" x="3181" y="0" width="642" height="224" frameX="-117" frameY="-68" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 10012" x="3181" y="0" width="642" height="224" frameX="-117" frameY="-68" frameWidth="877" frameHeight="360"/>
+	<SubTexture name="Week 20000" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 20001" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 20002" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 20003" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 20004" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 20005" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 20006" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 20007" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 20008" x="524" y="385" width="718" height="322"/>
+	<SubTexture name="Week 20009" x="1267" y="385" width="656" height="240" frameX="-31" frameY="-41" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 20010" x="1948" y="385" width="582" height="197" frameX="-68" frameY="-63" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 20011" x="2555" y="385" width="504" height="197" frameX="-107" frameY="-63" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 20012" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30000" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30001" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30002" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30003" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30004" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30005" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30006" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30007" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30008" x="3084" y="385" width="718" height="322"/>
+	<SubTexture name="Week 30009" x="1267" y="385" width="656" height="240" frameX="-31" frameY="-41" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30010" x="1948" y="385" width="582" height="197" frameX="-68" frameY="-63" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30011" x="2555" y="385" width="504" height="197" frameX="-107" frameY="-63" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 30012" x="0" y="385" width="499" height="243" frameX="-109" frameY="-39" frameWidth="718" frameHeight="322"/>
+	<SubTexture name="Week 40000" x="0" y="732" width="645" height="227" frameX="-90" frameY="-68" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40001" x="0" y="732" width="645" height="227" frameX="-90" frameY="-68" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40002" x="0" y="732" width="645" height="227" frameX="-90" frameY="-68" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40003" x="0" y="732" width="645" height="227" frameX="-90" frameY="-68" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40004" x="0" y="732" width="645" height="227" frameX="-90" frameY="-68" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40005" x="0" y="732" width="645" height="227" frameX="-90" frameY="-68" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40006" x="0" y="732" width="645" height="227" frameX="-90" frameY="-68" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40007" x="0" y="732" width="645" height="227" frameX="-90" frameY="-68" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40008" x="0" y="732" width="645" height="227" frameX="-90" frameY="-68" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40009" x="0" y="732" width="645" height="227" frameX="-90" frameY="-68" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40010" x="670" y="732" width="825" height="364"/>
+	<SubTexture name="Week 40011" x="1520" y="732" width="735" height="270" frameX="-45" frameY="-47" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40012" x="2280" y="732" width="652" height="208" frameX="-87" frameY="-78" frameWidth="825" frameHeight="364"/>
+	<SubTexture name="Week 40013" x="2280" y="732" width="652" height="208" frameX="-87" frameY="-78" frameWidth="825" frameHeight="364"/>
+</TextureAtlas>

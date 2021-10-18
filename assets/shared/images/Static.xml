@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Static.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Static0000" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="Static0001" x="1315" y="0" width="1280" height="720"/>
+	<SubTexture name="Static0002" x="2630" y="0" width="1280" height="720"/>
+	<SubTexture name="Static0003" x="0" y="755" width="1280" height="720"/>
+	<SubTexture name="Static0004" x="1315" y="755" width="1280" height="720"/>
+	<SubTexture name="Static0005" x="2630" y="755" width="1280" height="720"/>
+	<SubTexture name="Static0006" x="0" y="1510" width="1280" height="720"/>
+	<SubTexture name="Static0007" x="1315" y="1510" width="1280" height="720"/>
+</TextureAtlas>

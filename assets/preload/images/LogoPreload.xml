@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="LogoPreload.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="End0000" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0001" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0002" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0003" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0004" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0005" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0006" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0007" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0008" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0009" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0010" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0011" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0012" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="End0013" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0000" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0001" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0002" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0003" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0004" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0005" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0006" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0007" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0008" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0009" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0010" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0011" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0012" x="0" y="0" width="570" height="376"/>
+	<SubTexture name="Start0013" x="0" y="0" width="570" height="376"/>
+</TextureAtlas>

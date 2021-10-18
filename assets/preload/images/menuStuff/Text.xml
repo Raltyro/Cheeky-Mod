@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Text.png">
+	<!-- Created with Adobe Animate version 21.0.4.39603 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Text_Confirm0000" x="0" y="0" width="570" height="105"/>
+	<SubTexture name="Text_Confirm0001" x="0" y="0" width="570" height="105"/>
+	<SubTexture name="Text_Confirm0002" x="0" y="120" width="570" height="105"/>
+	<SubTexture name="Text_Confirm0003" x="0" y="120" width="570" height="105"/>
+	<SubTexture name="Tite_Text0000" x="0" y="240" width="570" height="105"/>
+</TextureAtlas>

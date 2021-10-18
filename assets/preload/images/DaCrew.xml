@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="DaCrew.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Lexicord0000" x="0" y="0" width="279" height="226"/>
+	<SubTexture name="Lonestar0000" x="304" y="0" width="223" height="222"/>
+	<SubTexture name="Madbear4220000" x="552" y="0" width="244" height="251"/>
+	<SubTexture name="MarshyFlake0000" x="0" y="276" width="246" height="298"/>
+	<SubTexture name="Nffirg0000" x="271" y="276" width="269" height="283"/>
+	<SubTexture name="Phlox0000" x="565" y="276" width="253" height="309"/>
+	<SubTexture name="Voidicus0000" x="0" y="610" width="305" height="290"/>
+	<SubTexture name="Wildy0000" x="330" y="610" width="233" height="212"/>
+	<SubTexture name="Wizord0000" x="588" y="610" width="296" height="205"/>
+</TextureAtlas>

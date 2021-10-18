@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cheeky_icons.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Cheeky_Losing0000" x="0" y="0" width="156" height="148"/>
+	<SubTexture name="Cheeky_Winning0000" x="181" y="0" width="154" height="148"/>
+</TextureAtlas>

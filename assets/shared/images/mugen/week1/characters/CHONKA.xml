@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="CHONKA.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="CHONK0000" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0001" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0002" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0003" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0004" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0005" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0006" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0007" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0008" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0009" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0010" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0011" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0012" x="0" y="0" width="512" height="440"/>
+	<SubTexture name="CHONK0013" x="0" y="0" width="512" height="440"/>
+</TextureAtlas>

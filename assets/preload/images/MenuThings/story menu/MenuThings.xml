@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MenuThings.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Menu10000" x="0" y="0" width="1366" height="1536" frameX="0" frameY="0" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10001" x="1391" y="0" width="1366" height="1536" frameX="0" frameY="-90" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10002" x="2782" y="0" width="1366" height="1536" frameX="0" frameY="-216" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10003" x="4173" y="0" width="1366" height="1536" frameX="0" frameY="-342" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10004" x="5564" y="0" width="1366" height="1536" frameX="0" frameY="-456" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10005" x="0" y="1561" width="1366" height="1536" frameX="0" frameY="-624" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10006" x="1391" y="1561" width="1366" height="1536" frameX="0" frameY="-821" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10007" x="2782" y="1561" width="1366" height="768" frameX="0" frameY="-768" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10008" x="4173" y="1561" width="1366" height="768" frameX="0" frameY="-768" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10009" x="5564" y="1561" width="1366" height="768" frameX="0" frameY="-768" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10010" x="0" y="3122" width="1366" height="768" frameX="0" frameY="-768" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10011" x="1391" y="3122" width="1366" height="768" frameX="0" frameY="-768" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10012" x="2782" y="3122" width="1366" height="768" frameX="0" frameY="-768" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10013" x="4173" y="3122" width="1366" height="768" frameX="0" frameY="-768" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu10014" x="5564" y="3122" width="1366" height="768" frameX="0" frameY="-768" frameWidth="1366" frameHeight="2357"/>
+	<SubTexture name="Menu20000" x="0" y="3915" width="1366" height="768" frameX="0" frameY="-679" frameWidth="1366" frameHeight="2167"/>
+	<SubTexture name="Menu20001" x="1391" y="3915" width="1366" height="1536" frameX="0" frameY="-631" frameWidth="1366" frameHeight="2167"/>
+	<SubTexture name="Menu20002" x="2782" y="3915" width="1366" height="1536" frameX="0" frameY="-493" frameWidth="1366" frameHeight="2167"/>
+	<SubTexture name="Menu20003" x="4173" y="3915" width="1366" height="1536" frameX="0" frameY="-301" frameWidth="1366" frameHeight="2167"/>
+	<SubTexture name="Menu20004" x="5564" y="3915" width="1366" height="1536" frameX="0" frameY="0" frameWidth="1366" frameHeight="2167"/>
+	<SubTexture name="Menu20005" x="0" y="5476" width="1366" height="768" frameX="0" frameY="-679" frameWidth="1366" frameHeight="2167"/>
+	<SubTexture name="Menu20006" x="1391" y="5476" width="1366" height="768" frameX="0" frameY="-679" frameWidth="1366" frameHeight="2167"/>
+	<SubTexture name="Menu20007" x="2782" y="5476" width="1366" height="768" frameX="0" frameY="-679" frameWidth="1366" frameHeight="2167"/>
+	<SubTexture name="Menu20008" x="4173" y="5476" width="1366" height="768" frameX="0" frameY="-679" frameWidth="1366" frameHeight="2167"/>
+	<SubTexture name="Menu20009" x="5564" y="5476" width="1366" height="768" frameX="0" frameY="-679" frameWidth="1366" frameHeight="2167"/>
+	<SubTexture name="Menu30000" x="0" y="6269" width="1941" height="1228"/>
+</TextureAtlas>

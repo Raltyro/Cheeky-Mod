@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="UI_assets.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="EASY0000" x="0" y="0" width="203" height="77"/>
+	<SubTexture name="HARD0000" x="228" y="0" width="227" height="83"/>
+	<SubTexture name="NORMAL0000" x="0" y="108" width="274" height="73"/>
+	<SubTexture name="Week 00000" x="299" y="108" width="208" height="79"/>
+	<SubTexture name="Week 10000" x="299" y="108" width="208" height="79"/>
+	<SubTexture name="Week 20000" x="0" y="212" width="196" height="70"/>
+	<SubTexture name="Week 30000" x="221" y="212" width="189" height="77"/>
+	<SubTexture name="arrow left0000" x="435" y="212" width="48" height="85"/>
+	<SubTexture name="arrow push left0000" x="0" y="322" width="42" height="75"/>
+	<SubTexture name="arrow push left0001" x="0" y="322" width="42" height="75"/>
+	<SubTexture name="arrow push left0002" x="0" y="322" width="42" height="75"/>
+	<SubTexture name="arrow push left0003" x="0" y="322" width="42" height="75"/>
+	<SubTexture name="arrow push right0000" x="67" y="322" width="41" height="74"/>
+	<SubTexture name="arrow push right0001" x="67" y="322" width="41" height="74"/>
+	<SubTexture name="arrow push right0002" x="67" y="322" width="41" height="74"/>
+	<SubTexture name="arrow push right0003" x="67" y="322" width="41" height="74"/>
+	<SubTexture name="arrow right0000" x="133" y="322" width="47" height="85"/>
+</TextureAtlas>

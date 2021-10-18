@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="RON_crowd_clappinglaughing.png">
+	<!-- Created with Adobe Animate version 21.0.8.42666 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="crowd0000" x="0" y="0" width="2123" height="672"/>
+	<SubTexture name="crowd0001" x="0" y="0" width="2123" height="672"/>
+	<SubTexture name="crowd0002" x="0" y="672" width="2123" height="672"/>
+	<SubTexture name="crowd0003" x="0" y="672" width="2123" height="672"/>
+	<SubTexture name="crowd0004" x="0" y="0" width="2123" height="672"/>
+	<SubTexture name="crowd0005" x="0" y="0" width="2123" height="672"/>
+	<SubTexture name="crowd0006" x="0" y="672" width="2123" height="672"/>
+	<SubTexture name="crowd0007" x="0" y="672" width="2123" height="672"/>
+	<SubTexture name="crowd0008" x="0" y="0" width="2123" height="672"/>
+	<SubTexture name="crowd0009" x="0" y="0" width="2123" height="672"/>
+	<SubTexture name="crowd0010" x="0" y="672" width="2123" height="672"/>
+	<SubTexture name="crowd0011" x="0" y="672" width="2123" height="672"/>
+	<SubTexture name="crowd0012" x="0" y="0" width="2123" height="672"/>
+	<SubTexture name="crowd0013" x="0" y="0" width="2123" height="672"/>
+	<SubTexture name="crowd0014" x="0" y="672" width="2123" height="672"/>
+	<SubTexture name="crowd0015" x="0" y="672" width="2123" height="672"/>
+	<SubTexture name="crowd0016" x="0" y="0" width="2123" height="672"/>
+	<SubTexture name="crowd0017" x="0" y="0" width="2123" height="672"/>
+	<SubTexture name="crowd0018" x="0" y="672" width="2123" height="672"/>
+	<SubTexture name="crowd0019" x="0" y="672" width="2123" height="672"/>
+</TextureAtlas>

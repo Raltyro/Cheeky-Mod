@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="week selections.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="week0 basic0000" x="0" y="0" width="892" height="279" pivotX="-24.7" pivotY="-142.4" frameX="-16" frameY="-8" frameWidth="918" frameHeight="314"/>
+	<SubTexture name="week0 basic0001" x="892" y="0" width="900" height="299" frameX="-15" frameY="-4" frameWidth="918" frameHeight="314"/>
+	<SubTexture name="week0 basic0002" x="1792" y="0" width="918" height="314"/>
+	<SubTexture name="week0 select0000" x="2710" y="0" width="917" height="314" pivotX="0" pivotY="0"/>
+	<SubTexture name="week1 basic0000" x="0" y="314" width="892" height="278" pivotX="187.45" pivotY="130.35" frameX="-16" frameY="-8" frameWidth="922" frameHeight="313"/>
+	<SubTexture name="week1 basic0001" x="892" y="314" width="901" height="297" frameX="-15" frameY="-5" frameWidth="922" frameHeight="313"/>
+	<SubTexture name="week1 basic0002" x="1793" y="314" width="922" height="313"/>
+	<SubTexture name="week1 select0000" x="2715" y="314" width="901" height="298" pivotX="0" pivotY="0"/>
+	<SubTexture name="week2 basic0000" x="0" y="627" width="934" height="298" pivotX="187.45" pivotY="130.35" frameX="-16" frameY="-8" frameWidth="966" frameHeight="313"/>
+	<SubTexture name="week2 basic0001" x="934" y="627" width="947" height="303" frameX="-15" frameY="-5" frameWidth="966" frameHeight="313"/>
+	<SubTexture name="week2 basic0002" x="1881" y="627" width="966" height="313"/>
+	<SubTexture name="week2 select0000" x="2847" y="627" width="934" height="299" pivotX="0" pivotY="0"/>
+	<SubTexture name="week3 basic0000" x="0" y="940" width="892" height="279" pivotX="-24.7" pivotY="-142.4" frameX="-16" frameY="-8" frameWidth="918" frameHeight="314"/>
+	<SubTexture name="week3 basic0001" x="892" y="940" width="900" height="299" frameX="-15" frameY="-4" frameWidth="918" frameHeight="314"/>
+	<SubTexture name="week3 basic0002" x="1792" y="940" width="918" height="314"/>
+	<SubTexture name="week3 select0000" x="2710" y="940" width="899" height="298" pivotX="0" pivotY="0"/>
+</TextureAtlas>

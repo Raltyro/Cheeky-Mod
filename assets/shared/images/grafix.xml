@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="grafix.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Bad0000" x="0" y="0" width="189" height="125"/>
+	<SubTexture name="Combo0000" x="214" y="0" width="317" height="116"/>
+	<SubTexture name="Good0000" x="556" y="0" width="262" height="111"/>
+	<SubTexture name="Shit0000" x="0" y="150" width="241" height="142"/>
+	<SubTexture name="Sick0000" x="266" y="150" width="345" height="138"/>
+</TextureAtlas>

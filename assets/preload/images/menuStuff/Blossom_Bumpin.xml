@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Blossom_Bumpin.png">
+	<!-- Created with Adobe Animate version 21.0.4.39603 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Blossom_Bumpin instance 10000" x="0" y="0" width="593" height="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10001" x="608" y="0" width="585" height="387" frameX="-4" frameY="-4" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10002" x="1208" y="0" width="578" height="382" frameX="-7" frameY="-7" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10003" x="0" y="407" width="570" height="378" frameX="-11" frameY="-10" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10004" x="585" y="407" width="574" height="381" frameX="-9" frameY="-8" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10005" x="585" y="407" width="574" height="381" frameX="-9" frameY="-8" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10006" x="585" y="407" width="574" height="381" frameX="-9" frameY="-8" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10007" x="585" y="407" width="574" height="381" frameX="-9" frameY="-8" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10008" x="585" y="407" width="574" height="381" frameX="-9" frameY="-8" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10009" x="585" y="407" width="574" height="381" frameX="-9" frameY="-8" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10010" x="585" y="407" width="574" height="381" frameX="-9" frameY="-8" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10011" x="585" y="407" width="574" height="381" frameX="-9" frameY="-8" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10012" x="585" y="407" width="574" height="381" frameX="-9" frameY="-8" frameWidth="593" frameHeight="392"/>
+	<SubTexture name="Blossom_Bumpin instance 10013" x="585" y="407" width="574" height="381" frameX="-9" frameY="-8" frameWidth="593" frameHeight="392"/>
+</TextureAtlas>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="flame.png">
+	<!-- Created with Adobe Animate version 21.0.8.42666 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="finre0000" x="0" y="0" width="106" height="277" frameX="-87" frameY="-3" frameWidth="273" frameHeight="281"/>
+	<SubTexture name="finre0001" x="106" y="0" width="160" height="241" frameX="-59" frameY="-39" frameWidth="273" frameHeight="281"/>
+	<SubTexture name="finre0002" x="266" y="0" width="224" height="220" frameX="-24" frameY="-60" frameWidth="273" frameHeight="281"/>
+	<SubTexture name="finre0003" x="490" y="0" width="273" height="157" frameX="0" frameY="-123" frameWidth="273" frameHeight="281"/>
+	<SubTexture name="finre0004" x="763" y="0" width="210" height="159" frameX="-36" frameY="-121" frameWidth="273" frameHeight="281"/>
+	<SubTexture name="finre0005" x="0" y="277" width="167" height="182" frameX="-58" frameY="-98" frameWidth="273" frameHeight="281"/>
+	<SubTexture name="finre0006" x="167" y="277" width="164" height="197" frameX="-62" frameY="-83" frameWidth="273" frameHeight="281"/>
+	<SubTexture name="finre0007" x="331" y="277" width="81" height="281" frameX="-100" frameY="0" frameWidth="273" frameHeight="281"/>
+</TextureAtlas>

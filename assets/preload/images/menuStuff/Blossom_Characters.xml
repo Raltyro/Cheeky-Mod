@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Blossom_Characters.png">
+	<!-- Created with Adobe Animate version 21.0.4.39603 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Character_Sillouettes instance 10000" x="0" y="0" width="2077" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10001" x="2092" y="0" width="2078" height="465" frameX="0" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10002" x="4185" y="0" width="2078" height="465" frameX="0" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10003" x="0" y="480" width="2077" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10004" x="2092" y="480" width="2078" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10005" x="4185" y="480" width="2078" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10006" x="0" y="960" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10007" x="2094" y="960" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10008" x="4188" y="960" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10009" x="0" y="1440" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10010" x="2094" y="1440" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10011" x="2094" y="1440" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10012" x="4188" y="1440" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10013" x="0" y="1920" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10014" x="2094" y="1920" width="2077" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10015" x="4186" y="1920" width="2077" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10016" x="0" y="2400" width="2078" height="465" frameX="0" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10017" x="2093" y="2400" width="2078" height="465" frameX="0" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10018" x="4186" y="2400" width="2078" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10019" x="0" y="2880" width="2078" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10020" x="2093" y="2880" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10021" x="4187" y="2880" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10022" x="0" y="3360" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10023" x="2094" y="3360" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10024" x="4188" y="3360" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10025" x="0" y="3840" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+	<SubTexture name="Character_Sillouettes instance 10026" x="2094" y="3840" width="2079" height="465" frameX="-1" frameY="0" frameWidth="2080" frameHeight="465"/>
+</TextureAtlas>
