@@ -33,6 +33,8 @@ class VlcBitmap extends Bitmap
 	// ===================================================================================
 	// Properties
 	//-----------------------------------------------------------------------------------
+	public var offsetX:Int = 0;
+	public var offsetY:Int = 0;
 	public var videoWidth:Int;
 	public var videoHeight:Int;
 	public var repeat:Int = 0;
@@ -311,7 +313,7 @@ class VlcBitmap extends Bitmap
 
 		// BitmapData
 		bitmapData = new BitmapData(Std.int(videoWidth), Std.int(videoHeight), true, 0);
-		frameRect = new Rectangle(0, 0, Std.int(videoWidth), Std.int(videoHeight));
+		frameRect = new Rectangle(offsetX, offsetY, Std.int(videoWidth+offsetX), Std.int(videoHeight+offsetY));
 
 		// (Stage3D)
 		// texture = Lib.current.stage.stage3Ds[0].context3D.createRectangleTexture(videoWidth, videoHeight, Context3DTextureFormat.BGRA, true);
@@ -330,7 +332,7 @@ class VlcBitmap extends Bitmap
 			height = videoHeight;
 
 		bufferMem = [];
-		frameSize = videoWidth * videoHeight * 4;
+		frameSize = (videoWidth+offsetX) * (videoHeight+offsetY) * 4;
 
 		setVolume(volume);
 
