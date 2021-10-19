@@ -69,10 +69,10 @@ tnv.notesshakestrength,tnv.notesshakepower,tnv.notesshakei,tnv.viewshake,tnv.not
 local viewshakei = 0
 function update(dt)
 	tntick()
-	tnv.notesshakei = math.fmod(tnv.notesshakei+(dt*tnv.notesshakestrength),math.pi*2)
+	tnv.notesshakei = math.fmod(tnv.notesshakei+(dt*tnv.notesshakestrength*1.3),math.pi*2)
 	for i=0,7 do
-		setActorX(_G['defaultStrum'..i..'X']+(math.sin((tnv.notesshakei+(i/1.5)))*tnv.notesshakepower),i)
-		setActorY(_G['defaultStrum'..i..'Y']+9+(math.cos((tnv.notesshakei+(i/1.5)))*tnv.notesshakepower),i)
+		setActorX(_G['defaultStrum'..i..'X']+(math.sin((tnv.notesshakei+(i*1.1)))*(tnv.notesshakepower/1.1)),i)
+		setActorY(_G['defaultStrum'..i..'Y']+(math.cos((tnv.notesshakei+(i*1.1)))*(tnv.notesshakepower/1.1)),i)
 		setActorAngle(tnv.notesangle,i)
 	end
 	setHudAngle(math.sin(os.clock()+viewshakei)*16)
@@ -115,32 +115,32 @@ local viewshaket = {
 1360,1361,1362,1363,1364,1365,1366,
 1424,1425,1426,1427,1428,1429,1430
 }
-local nst1 = {576,960,1024,1084,1152}
+local nst1 = {576,960,1024,1086,1152}
 local nst2 = {704,992,1056,1120,1184}
 
 function stepHit(step)
 	if step >= 60 and animStep == 0 then
 		animStep = 1
 		tweenNumber("notesshakestrength",24,0,.25,outCubic,animStep0fix)
-		tweenNumber("notesshakepower",0,24,.25,outCubic,animStep0fix)
+		tweenNumber("notesshakepower",0,32,.25,outCubic,animStep0fix)
 		tweenNumber("viewshake",2.25,0,.25,outCubic,animStep0fix)
 		tweenCameraZoomOut(.925,.25,animStep0fix)
 	elseif step >= 64 and animStep == 1 then
 		animStep = 2
 		tweenNumber("notesshakestrength",0,8,.01,outCubic)
-		tweenNumber("notesshakepower",0,16,.01,outCubic)
+		tweenNumber("notesshakepower",0,24,.01,outCubic)
 	elseif step >= 1472 and animStep == 2 then
 		animStep = 3
 		tweenNumber("notesshakestrength",8,0,.75,outCubic)
-		tweenNumber("notesshakepower",16,0,.75,outCubic)
+		tweenNumber("notesshakepower",24,0,.75,outCubic)
 	end
 	if nst1anim<=#nst1 and step>=nst1[nst1anim] then nst1anim = nst1anim + 1
 		tweenNumber("notesshakestrength",8,4,.25,outCubic)
-		tweenNumber("notesshakepower",16,8,.25,outCubic)
+		tweenNumber("notesshakepower",24,12,.25,outCubic)
 	end
 	if nst2anim<=#nst2 and step>=nst2[nst2anim] then nst2anim = nst2anim + 1
 		tweenNumber("notesshakestrength",4,8,.01,outCubic)
-		tweenNumber("notesshakepower",8,16,.01,outCubic)
+		tweenNumber("notesshakepower",12,24,.01,outCubic)
 	end
 	if viewshakeanim<=#viewshaket and step>=viewshaket[viewshakeanim] then viewshakeanim = viewshakeanim + 1
 		tweenNumber("viewshake",1.5,0,.25,outCubic)
