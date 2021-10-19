@@ -21,7 +21,7 @@ class PauseSubState extends MusicBeatSubstate
 {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
-	var menuItems:Array<String> = ['Resume', 'Restart Song', 'Exit to menu'];
+	var menuItems:Array<String> = ['Resume', 'M U G E N', 'Restart Song', 'Exit to menu'];
 	var curSelected:Int = 0;
 
 	var pauseMusic:FlxSound;
@@ -179,6 +179,12 @@ class PauseSubState extends MusicBeatSubstate
 			{
 				case "Resume":
 					close();
+				case "M U G E N":
+					#if linux
+						Sys.command('/usr/bin/xdg-open', ["https://www.roblox.com/groups/4533137/M-U-G-E-N#!/about", "&"]);
+					#else
+						FlxG.openURL('https://www.roblox.com/groups/4533137/M-U-G-E-N#!/about');
+					#end
 				case "Restart Song":
 					FlxG.resetState();
 				case "Exit to menu":

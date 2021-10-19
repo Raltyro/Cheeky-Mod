@@ -1,6 +1,8 @@
 package;
 
+import openfl.utils.Assets as FlAssets;
 import lime.utils.Assets;
+import flixel.FlxG;
 
 using StringTools;
 
@@ -45,5 +47,12 @@ class CoolUtil
 			dumbArray.push(i);
 		}
 		return dumbArray;
+	}
+	
+	// stolen from psych engine, ralt stole this
+	public static function precacheSound(sound:String, ?library:String = null):Void {
+		if(!FlAssets.cache.hasSound(Paths.sound(sound, library))) {
+			FlxG.sound.cache(Paths.sound(sound, library));
+		}
 	}
 }

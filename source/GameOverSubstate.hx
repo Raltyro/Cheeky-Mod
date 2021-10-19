@@ -7,6 +7,8 @@ import flixel.math.FlxPoint;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 
+import PlayState;
+
 class GameOverSubstate extends MusicBeatSubstate
 {
 	var bf:Boyfriend;
@@ -16,6 +18,8 @@ class GameOverSubstate extends MusicBeatSubstate
 
 	public function new(x:Float, y:Float)
 	{
+		trace(x);
+		trace(y);
 		var daStage = PlayState.curStage;
 		var daBf:String = '';
 		switch (PlayState.SONG.player1)
@@ -28,6 +32,7 @@ class GameOverSubstate extends MusicBeatSubstate
 				daBf = 'bf-bob';
 			default:
 				daBf = 'bf';
+				if (PlayState.SONG.song.toLowerCase() == "hard 2 break") daBf = 'bf-gundeath';
 		}
 
 		super();
@@ -36,6 +41,12 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		bf = new Boyfriend(x, y, daBf);
 		add(bf);
+		
+		if (PlayState.SONG.song.toLowerCase() == "hard 2 break") {
+			bf.playAnim('deathLoop');
+			FlxG.sound.play(Paths.sound('gunfire'));
+			FlxG.sound.play(Paths.sound('damagesfx'));
+		}
 
 		camFollow = new FlxObject(bf.getGraphicMidpoint().x, bf.getGraphicMidpoint().y, 1, 1);
 		add(camFollow);

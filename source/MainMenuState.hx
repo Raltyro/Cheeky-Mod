@@ -147,7 +147,7 @@ class MainMenuState extends MusicBeatState
 			partycheek = new FlxSprite(10, 10).loadGraphic(Paths.image('waiwuwo'));
 			partycheek.screenCenter();
 			partycheek.y -= 200;
-			partycheek.x += 600;
+			partycheek.x += 500;
 			partycheek.scrollFactor.set();
 			add(partycheek);
 		}

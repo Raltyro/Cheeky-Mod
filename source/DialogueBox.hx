@@ -42,22 +42,6 @@ class DialogueBox extends FlxSpriteGroup
 	{
 		super();
 
-		switch (PlayState.SONG.song.toLowerCase())
-		{
-			case 'senpai':
-				FlxG.sound.playMusic(Paths.music('Lunchbox'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
-			case 'thorns':
-				FlxG.sound.playMusic(Paths.music('LunchboxScary'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
-			case 'rivals' | 'fnaf shuffle': 
-				FlxG.sound.playMusic(Paths.music('Mule'));
-			case 'cuisine': 
-				FlxG.sound.playMusic(Paths.music('Royalty_free_french_music'));
-			default: 
-				FlxG.sound.playMusic(Paths.music('Wind'));
-		}
-
 		bgFade = new FlxSprite(-200, -200).makeGraphic(Std.int(FlxG.width * 1.3), Std.int(FlxG.height * 1.3), 0xFFB3DFd8);
 		bgFade.scrollFactor.set();
 		bgFade.alpha = 0;
@@ -106,16 +90,16 @@ class DialogueBox extends FlxSpriteGroup
 				cheekyIcon = new FlxSprite(320, 170).loadGraphic(Paths.image('portraits/cheekyPortrait'));
 				add(cheekyIcon);
 				cheekyIcon.visible = false;
-				cheekyIcon.setGraphicSize(Std.int(cheekyIcon.width / 1.25));
-				cheekyIcon.y -= 175;
-				cheekyIcon.x -= 95;
+				cheekyIcon.setGraphicSize(Std.int(cheekyIcon.width / 1.35));
+				cheekyIcon.y -= 150;
+				cheekyIcon.x -= 170;
 
 				bfIcon = new FlxSprite(320, 170).loadGraphic(Paths.image('portraits/bobPortrait'));
 				add(bfIcon);
 				bfIcon.visible = false;
 			//	bfIcon.setGraphicSize(Std.int(bfIcon.width / 1.25));
-				bfIcon.y -= cheekyIcon.y;
-				bfIcon.x -= cheekyIcon.x - 550;
+				bfIcon.y -= cheekyIcon.y - 30;
+				bfIcon.x -= cheekyIcon.x - 620;
 			case 'cuisine': 
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('portraits/vesztesegTextbox');
@@ -133,8 +117,8 @@ class DialogueBox extends FlxSpriteGroup
 				add(bfIcon);
 				bfIcon.visible = false;
 			//	bfIcon.setGraphicSize(Std.int(bfIcon.width / 1.25));
-				bfIcon.y -= cheekyIcon.y;
-				bfIcon.x -= cheekyIcon.x - 550;
+				bfIcon.y -= cheekyIcon.y + 43;
+				bfIcon.x -= cheekyIcon.x - 590;
 			default: 
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('portraits/vesztesegTextbox');
@@ -144,25 +128,42 @@ class DialogueBox extends FlxSpriteGroup
 				cheekyIcon = new FlxSprite(320, 170).loadGraphic(Paths.image('portraits/cheekyPortrait'));
 				add(cheekyIcon);
 				cheekyIcon.visible = false;
-				cheekyIcon.setGraphicSize(Std.int(cheekyIcon.width / 1.25));
-				cheekyIcon.y -= 175;
-				cheekyIcon.x -= 95;
-
+				cheekyIcon.setGraphicSize(Std.int(cheekyIcon.width / 1.35));
+				cheekyIcon.y -= 150;
+				cheekyIcon.x -= 170;
 				
 				bfIcon = new FlxSprite(320, 170).loadGraphic(Paths.image('portraits/bfPortrait'));
 				add(bfIcon);
 				bfIcon.visible = false;
-				bfIcon.y -= cheekyIcon.y;
-				bfIcon.x -= cheekyIcon.x - 550;
+				bfIcon.y -= cheekyIcon.y - 25;
+				bfIcon.x -= cheekyIcon.x - 500;
 		}
 
 		bfIconX = bfIcon.x;
 		cheekyIconX = cheekyIcon.x;
+		bfIcon.antialiasing = FlxG.save.data.antialiasing;
+		cheekyIcon.antialiasing = FlxG.save.data.antialiasing;
 		this.dialogueList = dialogueList;
 		
 		if (!hasDialog)
 			return;
 	
+		switch (PlayState.SONG.song.toLowerCase())
+		{
+			case 'senpai':
+				FlxG.sound.playMusic(Paths.music('Lunchbox'), 0);
+				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'thorns':
+				FlxG.sound.playMusic(Paths.music('LunchboxScary'), 0);
+				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'rivals' | 'fnaf shuffle': 
+				FlxG.sound.playMusic(Paths.music('Mule'));
+			case 'cuisine': 
+				FlxG.sound.playMusic(Paths.music('Royalty_free_french_music'));
+			default: 
+				FlxG.sound.playMusic(Paths.music('Wind'));
+		}
+		
 		switch(PlayState.SONG.song.toLowerCase()){
 		case 'rivals' | 'bad eggroll' | 'cornucopia' | 'fnaf shuffle': 		
 			portraitRight = new FlxSprite(0, 40);
@@ -184,7 +185,7 @@ class DialogueBox extends FlxSpriteGroup
 			add(portraitLeft);
 			portraitLeft.visible = false;
 		case 'cuisine': 
-			portraitRight = new FlxSprite(0, 40);
+			portraitRight = new FlxSprite(0, 0);
 			portraitRight.frames = Paths.getSparrowAtlas('portraits/bfPortrait-bob');
 			portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
 			portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
@@ -231,6 +232,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitLeft.screenCenter(X);
 
 		handSelect = new FlxSprite(FlxG.width * 0.9, FlxG.height * 0.9).loadGraphic(Paths.image('weeb/pixelUI/hand_textbox'));
+		handSelect.visible = false;
 		add(handSelect);
 
 
@@ -299,8 +301,8 @@ class DialogueBox extends FlxSpriteGroup
 				{
 					isEnding = true;
 
-					if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns')
-						FlxG.sound.music.fadeOut(2.2, 0);
+					//if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns')
+					//	FlxG.sound.music.fadeOut(2.2, 0);
 
 					new FlxTimer().start(0.2, function(tmr:FlxTimer)
 					{
@@ -308,6 +310,8 @@ class DialogueBox extends FlxSpriteGroup
 						bgFade.alpha -= 1 / 5 * 0.7;
 						portraitLeft.visible = false;
 						portraitRight.visible = false;
+						bfIcon.visible = false;
+						cheekyIcon.visible = false;
 						swagDialogue.alpha -= 1 / 5;
 						dropText.alpha = swagDialogue.alpha;
 					}, 5);

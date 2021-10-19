@@ -14,6 +14,7 @@ class MP4Handler
 {
 	public var finishCallback:Void->Void;
 	public var stateCallback:FlxState;
+	var prevautopause:Bool = false;
 
 	public var bitmap:VlcBitmap;
 
@@ -21,6 +22,7 @@ class MP4Handler
 
 	public function new()
 	{
+		prevautopause = FlxG.autoPause;
 		FlxG.autoPause = false;
 	}
 
@@ -38,9 +40,6 @@ class MP4Handler
 		bitmap = new VlcBitmap();
 		bitmap.set_height(FlxG.stage.stageHeight);
 		bitmap.set_width(FlxG.stage.stageHeight * (16 / 9));
-
-		trace("Setting width to " + FlxG.stage.stageHeight * (16 / 9));
-		trace("Setting height to " + FlxG.stage.stageHeight);
 
 		bitmap.onVideoReady = onVLCVideoReady;
 		bitmap.onComplete = onVLCComplete;
@@ -85,8 +84,6 @@ class MP4Handler
 
 	function onVLCVideoReady()
 	{
-		trace("video loaded!");
-
 		if (sprite != null)
 			sprite.loadGraphic(bitmap.bitmapData);
 	}
@@ -95,29 +92,16 @@ class MP4Handler
 	{
 		bitmap.stop();
 
-		// Clean player, just in case! Actually no.
-
 		FlxG.camera.fade(FlxColor.BLACK, 0, false);
+		FlxG.autoPause = prevautopause;
 
-		trace("Big, Big Chungus, Big Chungus!");
-
-		new FlxTimer().start(0.3, function(tmr:FlxTimer)
-		{
-			if (finishCallback != null)
-			{
-				finishCallback();
-			}
-			else if (stateCallback != null)
-			{
-				LoadingState.loadAndSwitchState(stateCallback);
-			}
-
+		new FlxTimer().start(0.3, function(tmr:FlxTimer) {
 			bitmap.dispose();
 
-			if (FlxG.game.contains(bitmap))
-			{
-				FlxG.game.removeChild(bitmap);
-			}
+			if (FlxG.game.contains(bitmap)) FlxG.game.removeChild(bitmap);
+			
+			if (finishCallback != null) finishCallback();
+			else if (stateCallback != null) LoadingState.loadAndSwitchState(stateCallback);
 		});
 	}
 
@@ -147,13 +131,14 @@ class MP4Handler
 
 	function update(e:Event)
 	{
-		if (FlxG.keys.justPressed.ENTER || FlxG.keys.justPressed.SPACE)
-		{
-			if (bitmap.isPlaying)
-			{
-				onVLCComplete();
-			}
-		}
+		//We do not need this now because its used for VideoState now
+		//if (FlxG.keys.justPressed.ENTER || FlxG.keys.justPressed.SPACE)
+		//{
+		//	if (bitmap.isPlaying)
+		//	{
+		//		onVLCComplete();
+		//	}
+		//}
 
 		bitmap.volume = FlxG.sound.volume + 0.3; // shitty volume fix. then make it louder.
 

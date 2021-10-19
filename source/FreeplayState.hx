@@ -255,16 +255,16 @@ class FreeplayState extends MusicBeatState
 
 		if (accepted)
 		{
+			switch(songs[curSelected].songName.toLowerCase()){
+				case 'cornucopia' | 'bad omen': 
+					curDifficulty = 1;
+			}
 			var poop:String = Highscore.formatSong(songs[curSelected].songName.toLowerCase(), curDifficulty);
 
 			trace(poop);
 			
 			PlayState.SONG = Song.loadFromJson(poop, songs[curSelected].songName.toLowerCase());
 			PlayState.isStoryMode = false;
-			switch(songs[curSelected].songName.toLowerCase()){
-				case 'cornucopia' | 'bad omen': 
-					curDifficulty = 1;
-			}
 			PlayState.storyDifficulty = curDifficulty;
 			PlayState.storyWeek = songs[curSelected].week;
 			trace('CUR WEEK' + PlayState.storyWeek);
@@ -285,7 +285,7 @@ class FreeplayState extends MusicBeatState
 			#if !switch
 			intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
 			#end
-		}
+		} else intendedScore = Highscore.getScore(songs[curSelected].songName, 1);
 	}
 	
 	override function beatHit()
@@ -349,6 +349,7 @@ class FreeplayState extends MusicBeatState
 		FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
 		Conductor.changeBPM(PlayState.SONG.bpm);
 		
+		changeDiff()
 
 		var bullShit:Int = 0;
 
