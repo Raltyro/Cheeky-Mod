@@ -52,7 +52,7 @@ class BackgroundSprite extends FlxSpriteGroup
 		if (DaBackground == null){ 	//you probs don't want to remove this
 			defaultZoom = 0.9;
 			background = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback', 'shared'));
-			background.antialiasing = true;
+			background.antialiasing = FlxG.save.data.antialasing;
 			background.scrollFactor.set(0.9, 0.9);
 			background.active = false;
 			add(background);
@@ -60,7 +60,7 @@ class BackgroundSprite extends FlxSpriteGroup
 			var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront', 'shared'));
 			stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 			stageFront.updateHitbox();
-			stageFront.antialiasing = true;
+			stageFront.antialiasing = FlxG.save.data.antialasing;
 			stageFront.scrollFactor.set(0.9, 0.9);
 			stageFront.active = false;
 			add(stageFront);
@@ -68,7 +68,7 @@ class BackgroundSprite extends FlxSpriteGroup
 			var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains', 'shared'));
 			stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 			stageCurtains.updateHitbox();
-			stageCurtains.antialiasing = true;
+			stageCurtains.antialiasing = FlxG.save.data.antialasing;
 			stageCurtains.scrollFactor.set(1.3, 1.3);
 			stageCurtains.active = false;
 
@@ -79,7 +79,7 @@ class BackgroundSprite extends FlxSpriteGroup
 				case 'stage': 
 					defaultZoom = 0.9;
 					background = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback', 'shared'));
-					background.antialiasing = true;
+					background.antialiasing = FlxG.save.data.antialasing;
 					background.scrollFactor.set(0.9, 0.9);
 					background.active = false;
 					add(background);
@@ -87,7 +87,7 @@ class BackgroundSprite extends FlxSpriteGroup
 					var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront', 'shared'));
 					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 					stageFront.updateHitbox();
-					stageFront.antialiasing = true;
+					stageFront.antialiasing = FlxG.save.data.antialasing;
 					stageFront.scrollFactor.set(0.9, 0.9);
 					stageFront.active = false;
 					add(stageFront);
@@ -95,7 +95,7 @@ class BackgroundSprite extends FlxSpriteGroup
 					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains', 'shared'));
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 					stageCurtains.updateHitbox();
-					stageCurtains.antialiasing = true;
+					stageCurtains.antialiasing = FlxG.save.data.antialasing;
 					stageCurtains.scrollFactor.set(1.3, 1.3);
 					stageCurtains.active = false;
 	
@@ -105,58 +105,71 @@ class BackgroundSprite extends FlxSpriteGroup
 					switch (PlayState.SONG.song.toLowerCase()){
 						case 'hard 2 break':
 							wall = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.WHITE);
+							wall.antialiasing = FlxG.save.data.antialasing;
 							wall.setGraphicSize(Std.int(wall.width * 10));
 							add(wall);
 							FlxTween.color(wall, 1, wall.color, FlxColor.fromString(wallcolors[FlxG.random.int(1, 5)]));
 
 							background = new FlxSprite().loadGraphic(Paths.image('mugen/week1/backgrounds/Hard2Break_Castle', 'shared'));
-							background.antialiasing = true;
+							background.antialiasing = FlxG.save.data.antialasing;
 							background.screenCenter();
 							background.setGraphicSize(Std.int(background.width * 1.5));
 						//	background.color = FlxColor.fromString('#2d27a1');
 							add(background);
 						default: 
 							background = new FlxSprite().loadGraphic(Paths.image('mugen/week1/backgrounds/MugenCastle', 'shared'));
-							background.antialiasing = true;
+							background.antialiasing = FlxG.save.data.antialasing;
 							background.screenCenter();
 							background.setGraphicSize(Std.int(background.width * 1.5));
 							add(background);
 					}
 					switch(PlayState.SONG.song.toLowerCase()){
-						case 'toughstone' | "hard 2 break": 
+						case 'toughstone': 
 							bottomBoppers = new FlxSprite();
 							bottomBoppers.frames = Paths.getSparrowAtlas('mugen/week1/backgrounds/crowd');
 							bottomBoppers.animation.addByPrefix('idle', 'crowd', 24, false);
 							bottomBoppers.screenCenter();
 							bottomBoppers.y += 45;
 						//	bottomBoppers.scrollFactor.set(0.9, 0.9);
+							bottomBoppers.antialiasing = FlxG.save.data.antialasing;
 							bottomBoppers.setGraphicSize(Std.int(bottomBoppers.width * 1.3));
 							add(bottomBoppers);
-						case 'hard 2 break': 
+						case 'hard 2 break': // had to do this cause i have a different haxe version
+							bottomBoppers = new FlxSprite();
+							bottomBoppers.frames = Paths.getSparrowAtlas('mugen/week1/backgrounds/crowd');
+							bottomBoppers.animation.addByPrefix('idle', 'crowd', 24, false);
+							bottomBoppers.screenCenter();
+							bottomBoppers.y += 45;
+						//	bottomBoppers.scrollFactor.set(0.9, 0.9);
+							bottomBoppers.antialiasing = FlxG.save.data.antialasing;
+							bottomBoppers.setGraphicSize(Std.int(bottomBoppers.width * 1.3));
+							add(bottomBoppers);
+							
 							frontDudes = new FlxSprite();
 							frontDudes.frames = Paths.getSparrowAtlas('mugen/week1/backgrounds/crowd');
 							frontDudes.animation.addByPrefix('idle', 'crowd2', 24, false);
 							frontDudes.screenCenter();
-						//	frontDudes.y += 85;
+							frontDudes.antialiasing = FlxG.save.data.antialasing;
+							frontDudes.y += 85;
 						//	bottomBoppers.scrollFactor.set(0.9, 0.9);
 							frontDudes.setGraphicSize(Std.int(frontDudes.width * 1.3));
 						}
 				case 'omen': 
 					defaultZoom = 0.45;
 							background = new FlxSprite().loadGraphic(Paths.image('mugen/OMEN/backgrounds/BadOmen_Sky', 'shared'));
-							background.antialiasing = true;
+							background.antialiasing = FlxG.save.data.antialasing;
 							background.screenCenter();
 							background.setGraphicSize(Std.int(background.width * 1.5));
 							add(background);
 
 							var dawall:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mugen/OMEN/backgrounds/BadOmen_Wall', 'shared'));
-							dawall.antialiasing = true;
+							dawall.antialiasing = FlxG.save.data.antialasing;
 							dawall.screenCenter();
 							dawall.setGraphicSize(Std.int(dawall.width * 1.5));
 							add(dawall);
 
 							var pillars:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mugen/OMEN/backgrounds/BadOmen_Pillars', 'shared'));
-							pillars.antialiasing = true;
+							pillars.antialiasing = FlxG.save.data.antialasing;
 							pillars.screenCenter();
 							pillars.setGraphicSize(Std.int(pillars.width * 1.3));
 							add(pillars);
@@ -165,19 +178,19 @@ class BackgroundSprite extends FlxSpriteGroup
 					switch(PlayState.SONG.song.toLowerCase()){
 						case 'bad eggroll': 
 							background = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/MeatPlant_Back_RainySky', 'shared'));
-							background.antialiasing = true;
+							background.antialiasing = FlxG.save.data.antialasing;
 							background.screenCenter();
 							background.setGraphicSize(Std.int(background.width * 1.5));
 							add(background);
 						default: 
 							background = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/MeatPlant_Back_Sky', 'shared'));
-							background.antialiasing = true;
+							background.antialiasing = FlxG.save.data.antialasing;
 							background.screenCenter();
 							background.setGraphicSize(Std.int(background.width * 1.5));
 							add(background);	
 						}
 						var floor:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/MeatPlant_Floor', 'shared'));
-						floor.antialiasing = true;
+						floor.antialiasing = FlxG.save.data.antialasing;
 						floor.screenCenter();
 						floor.setGraphicSize(Std.int(floor.width * 1.5));
 						add(floor);
@@ -189,59 +202,60 @@ class BackgroundSprite extends FlxSpriteGroup
 						truck.x = 3500; 
 						truck.scrollFactor.set();
 						truck.animation.play('idle');
+						truck.antialiasing = FlxG.save.data.antialasing;
 						add(truck);
 
 						var thing:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/MeatPlant_Props', 'shared'));
-						thing.antialiasing = true;
+						thing.antialiasing = FlxG.save.data.antialasing;
 						thing.screenCenter();
 						thing.setGraphicSize(Std.int(thing.width * 1.25));
 						add(thing);
 				case 'hell': 
 					defaultZoom = 0.65;
 					background = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/Pankreas_Back_Sky', 'shared'));
-					background.antialiasing = true;
+					background.antialiasing = FlxG.save.data.antialasing;
 					background.screenCenter();
 					background.setGraphicSize(Std.int(background.width * 1.5));
 					add(background);
 
 					var backhill:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/Pankreas_Back_Hills', 'shared'));
-					backhill.antialiasing = true;
+					backhill.antialiasing = FlxG.save.data.antialasing;
 					backhill.screenCenter();
 					backhill.setGraphicSize(Std.int(backhill.width * 1.5));
 					add(backhill);
 
 					var hills:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/Pankreas_Hills', 'shared'));
-					hills.antialiasing = true;
+					hills.antialiasing = FlxG.save.data.antialasing;
 					hills.screenCenter();
 					hills.setGraphicSize(Std.int(hills.width * 1.5));
 					add(hills);
 
 					var lake:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/Pankreas_Red_River', 'shared'));
-					lake.antialiasing = true;
+					lake.antialiasing = FlxG.save.data.antialasing;
 					lake.screenCenter();
 					lake.setGraphicSize(Std.int(lake.width * 1.5));
 					add(lake);
 
 					var platform:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/Pancreas_Platform', 'shared'));
-					platform.antialiasing = true;
+					platform.antialiasing = FlxG.save.data.antialasing;
 					platform.screenCenter();
 					platform.setGraphicSize(Std.int(platform.width * 1.5));
 					add(platform);
 
 					backgthing = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/MeatPlant_Back_RainySky', 'shared'));
-					backgthing.antialiasing = true;
+					backgthing.antialiasing = FlxG.save.data.antialasing;
 					backgthing.screenCenter();
 					backgthing.setGraphicSize(Std.int(backgthing.width * 1.5));
 					add(backgthing);
 
 					thingy = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/MeatPlant_Floor', 'shared'));
-					thingy.antialiasing = true;
+					thingy.antialiasing = FlxG.save.data.antialasing;
 					thingy.screenCenter();
 					thingy.setGraphicSize(Std.int(thingy.width * 1.5));
 					add(thingy);
 					
 					floorthing = new FlxSprite().loadGraphic(Paths.image('mugen/week3/backgrounds/MeatPlant_Props', 'shared'));
-					floorthing.antialiasing = true;
+					floorthing.antialiasing = FlxG.save.data.antialasing;
 					floorthing.screenCenter();
 					floorthing.setGraphicSize(Std.int(floorthing.width * 1.25));
 					add(floorthing);
@@ -255,25 +269,25 @@ class BackgroundSprite extends FlxSpriteGroup
 					guy1.visible = false;
 					//scuffed preloading lmao it's 2 in the morning and i'm tired
 					var galaxy:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mugen/week2/backgrounds/Galaxy_Back', 'shared'));
-					galaxy.antialiasing = true;
+					galaxy.antialiasing = FlxG.save.data.antialasing;
 					galaxy.screenCenter();
 					galaxy.setGraphicSize(Std.int(galaxy.width * 2.15));
 					add(galaxy);
 
 					var galaxypillars:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mugen/week2/backgrounds/Galaxy_Pillars', 'shared'));
-					galaxypillars.antialiasing = true;
+					galaxypillars.antialiasing = FlxG.save.data.antialasing;
 					galaxypillars.screenCenter();
 					galaxypillars.setGraphicSize(Std.int(galaxy.width * 1.45));
 					add(galaxypillars);
 
 					var floor:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mugen/week2/backgrounds/Galaxy_Floor', 'shared'));
-					floor.antialiasing = true;
+					floor.antialiasing = FlxG.save.data.antialasing;
 					floor.screenCenter();
 					floor.setGraphicSize(Std.int(floor.width * 2.15));
 					add(floor);
 
 					background = new FlxSprite().loadGraphic(Paths.image('mugen/week2/backgrounds/cheekyhouse', 'shared'));
-					background.antialiasing = true;
+					background.antialiasing = FlxG.save.data.antialasing;
 					background.screenCenter();
 					background.setGraphicSize(Std.int(background.width * 1.5));
 					add(background);
@@ -293,7 +307,7 @@ class BackgroundSprite extends FlxSpriteGroup
 				case 'kitchen': 
 					defaultZoom = 0.575;
 						background = new FlxSprite().loadGraphic(Paths.image('mugen/ron/backgrounds/RON_background_sign', 'shared'));
-						background.antialiasing = true;
+						background.antialiasing = FlxG.save.data.antialasing;
 						background.screenCenter();
 						background.setGraphicSize(Std.int(background.width * 1.4));
 						background.y += 200;
@@ -302,7 +316,7 @@ class BackgroundSprite extends FlxSpriteGroup
 						add(background);
 
 						wall = new FlxSprite().loadGraphic(Paths.image('mugen/ron/backgrounds/RON_background_sign_on', 'shared'));
-						wall.antialiasing = true;
+						wall.antialiasing = FlxG.save.data.antialasing;
 						wall.screenCenter();
 						wall.setGraphicSize(Std.int(wall.width * 1.4));
 						wall.y += 200;
@@ -318,6 +332,7 @@ class BackgroundSprite extends FlxSpriteGroup
 						bottomBoppers.y += 300;
 						bottomBoppers.x += 100;
 						bottomBoppers.scrollFactor.set(0.7, 0.7);
+						bottomBoppers.antialiasing = FlxG.save.data.antialasing;
 
 						bottomBoppers.setGraphicSize(Std.int(bottomBoppers.width * 1.4));
 						add(bottomBoppers);
@@ -326,6 +341,7 @@ class BackgroundSprite extends FlxSpriteGroup
 						frontDudes.frames = Paths.getSparrowAtlas('mugen/ron/backgrounds/RON_crowd_clappinglaughing');
 						frontDudes.animation.addByPrefix('idle', 'crowd', 24, false);
 						frontDudes.screenCenter();
+						frontDudes.antialiasing = FlxG.save.data.antialasing;
 						frontDudes.scrollFactor.set(0.7, 0.7);
 						frontDudes.setGraphicSize(Std.int(frontDudes.width * 1.4));
 						frontDudes.y += 300;
@@ -338,6 +354,7 @@ class BackgroundSprite extends FlxSpriteGroup
 						kitchenthingy = new FlxSprite().loadGraphic(Paths.image('mugen/ron/backgrounds/RON_stage', 'shared'));
 						kitchenthingy.scrollFactor.set();
 						kitchenthingy.screenCenter();
+						kitchenthingy.antialiasing = FlxG.save.data.antialasing;
 						kitchenthingy.setGraphicSize(Std.int(kitchenthingy.width * 1.4));
 
 						add(kitchenthingy);
@@ -346,6 +363,7 @@ class BackgroundSprite extends FlxSpriteGroup
 						liteth = new FlxSprite().loadGraphic(Paths.image('mugen/ron/backgrounds/RON_lights', 'shared'));
 						liteth.scrollFactor.set(1, 1);
 						liteth.screenCenter();
+						liteth.antialiasing = FlxG.save.data.antialasing;
 						liteth.setGraphicSize(Std.int(kitchenthingy.width * 1.4));
 						liteth.y += 265;
 						add(liteth);
