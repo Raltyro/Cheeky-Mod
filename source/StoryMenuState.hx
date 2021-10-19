@@ -19,6 +19,8 @@ import lime.net.curl.CURLCode;
 import Discord.DiscordClient;
 #end
 
+import VideoState;
+
 using StringTools;
 
 class StoryMenuState extends MusicBeatState
@@ -199,6 +201,7 @@ class StoryMenuState extends MusicBeatState
 		add(txtWeekTitle);
 
 		updateText();
+		changeWeek();
 
 		trace("Line 165");
 
@@ -276,64 +279,53 @@ class StoryMenuState extends MusicBeatState
 	{
 		if (weekUnlocked[curWeek])
 		{
-			if (stopspamming == false)
-			{
+			if (!stopspamming) {
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 				FlxG.camera.flash(FlxColor.WHITE, 2.5);
 
 				stopspamming = true;
-			}
 
-			PlayState.storyPlaylist = weekData[curWeek];
-			PlayState.isStoryMode = true;
-			selectedWeek = true;
+				PlayState.storyPlaylist = weekData[curWeek];
+				PlayState.isStoryMode = true;
+				selectedWeek = true;
 
-			var diffic = "";
+				var diffic = "";
 
-			switch (curDifficulty)
-			{
-				case 0:
-					diffic = '-easy';
-				case 2:
-					diffic = '-hard';
-			}
+				switch (curDifficulty)
+				{
+					case 0:
+						diffic = '-easy';
+					case 2:
+						diffic = '-hard';
+				}
 
-			PlayState.storyDifficulty = curDifficulty;
+				PlayState.storyDifficulty = curDifficulty;
 
-			PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
-			PlayState.storyWeek = curWeek;
-			PlayState.campaignScore = 0;
-			switch(curWeek){
-				case 0: 
-					var video:MP4Handler = new MP4Handler();
-					video.playMP4(Paths.video('cutscene1'));
-					video.finishCallback = function()
-						{
-							new FlxTimer().start(1, function(tmr:FlxTimer){
+				PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
+				PlayState.storyWeek = curWeek;
+				PlayState.campaignScore = 0;
+				new FlxTimer().start(1, function(tmr:FlxTimer) {
+					switch(curWeek){
+						case 0:
+							FlxG.switchState(new VideoState(Paths.video('cutscene1'),true,function() {
 								LoadingState.loadAndSwitchState(new PlayState());
-							});
+							}));
+						case 2:
+							FlxG.switchState(new VideoState(Paths.video('cutscene4'),true,function() {
+								LoadingState.loadAndSwitchState(new PlayState());
+							}));	
+						default: 
+							LoadingState.loadAndSwitchState(new PlayState());
 					}
-				case 2: 
-					var video:MP4Handler = new MP4Handler();
-					video.playMP4(Paths.video('cutscene4'));
-					video.finishCallback = function()
-						{
-							new FlxTimer().start(1, function(tmr:FlxTimer){
-								LoadingState.loadAndSwitchState(new PlayState());
-							});
-					}	
-				default: 
-					new FlxTimer().start(1, function(tmr:FlxTimer){
-						LoadingState.loadAndSwitchState(new PlayState());
-					});
-				}	
-			}
-			else{
-				FlxG.camera.shake(0.05, 0.65);
-				FlxG.sound.play(Paths.sound('denied'));
-				FlxG.camera.flash(FlxColor.RED, 0.85);
+				});
 			}
 		}
+		else {
+			FlxG.camera.shake(0.05, 0.65);
+			FlxG.sound.play(Paths.sound('denied'));
+			FlxG.camera.flash(FlxColor.RED, 0.85);
+		}
+	}
 
 	function changeDifficulty(change:Int = 0):Void
 	{
@@ -363,7 +355,6 @@ class StoryMenuState extends MusicBeatState
 
 		// USING THESE WEIRD VALUES SO THAT IT DOESNT FLOAT UP
 		sprDifficulty.y = leftArrow.y - 15;
-		intendedScore = Highscore.getWeekScore(curWeek, curDifficulty);
 
 		#if !switch
 		intendedScore = Highscore.getWeekScore(curWeek, curDifficulty);
@@ -378,6 +369,10 @@ class StoryMenuState extends MusicBeatState
 
 	function changeWeek(huh:Int = 0)
 		{
+			#if !switch
+			intendedScore = Highscore.getWeekScore(curWeek, curDifficulty);
+			#end
+		
 				curWeek += huh;
 				if (curWeek >= grpWeekText.length)
 					curWeek = 0;

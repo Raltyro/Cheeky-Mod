@@ -449,6 +449,18 @@ class Character extends FlxSprite
 
 				flipX = true;
 				healthBarColor = FlxColor.fromRGB(43, 156, 255);
+			case 'bf-gundeath':
+				var tex = Paths.getSparrowAtlas('mugen/gundeath');
+				frames = tex;
+				animation.addByPrefix('firstDeath', "BF dies", 24, false);
+				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
+				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+				addOffset('firstDeath', 37, 22);
+				addOffset('deathLoop', 37, 5);
+				addOffset('deathConfirm', 37, 69);
+
+				flipX = true;
+				healthBarColor = FlxColor.fromRGB(43, 156, 255);
 			case 'bf-house':
 				trace('hi');
 				var tex = Paths.getSparrowAtlas('mugen/week2/characters/BF_House');
