@@ -349,7 +349,7 @@ class FreeplayState extends MusicBeatState
 		FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
 		Conductor.changeBPM(PlayState.SONG.bpm);
 		
-		changeDiff()
+		changeDiff();
 
 		var bullShit:Int = 0;
 
