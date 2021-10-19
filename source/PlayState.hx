@@ -2181,12 +2181,11 @@ class PlayState extends MusicBeatState
 		if (!inCutscene)
 			keyShit();
 		
-		//#if debug
+		#if debug
 		if (FlxG.keys.justPressed.ONE) endSong();
-		
+		#end
 		if (health <= 0) gameOver();
 		if (FlxG.save.data.resetButton && FlxG.keys.justPressed.R) gameOver();
-		//#end
 	}
 
 	function endSong():Void
